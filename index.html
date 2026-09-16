@@ -254,6 +254,88 @@ details.tbl-view td,details.tbl-view th{padding:5px 8px;border-bottom:1px solid 
 .docview .doc-foot{margin-top:14px;font-size:11px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px;line-height:1.5}
 .sheet .docview{margin-top:4px}
 
+/* dokumentu-orriak (A4 itxura) */
+.doc-stage{background:#e6eaea;padding:18px;border-radius:12px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.doc-paper{background:#fff;color:#1f2e33;padding:34px 38px 26px;border-radius:3px;box-shadow:0 14px 40px -18px rgba(22,45,52,.45),0 1px 2px rgba(22,45,52,.12);font-family:var(--font-body);font-size:12.5px;line-height:1.6;max-width:760px;margin:0 auto;position:relative}
+.doc-lh{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;padding-bottom:16px;border-bottom:1px solid var(--petrol);margin-bottom:16px}
+.doc-brand .logo{font-size:19px}
+.doc-brand-sub{font-family:var(--font-display);font-size:10px;letter-spacing:.06em;color:var(--muted);margin-top:8px;line-height:1.6;text-transform:uppercase}
+.doc-type{text-align:right;max-width:52%}
+.doc-eyebrow{display:block;font-family:var(--font-display);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand-2);margin-bottom:4px}
+.doc-type h2{font-family:var(--font-display);font-weight:400;font-size:20px;line-height:1.2;color:var(--petrol);margin:0}
+.doc-num{font-family:var(--font-display);font-size:11px;color:var(--muted);margin-top:6px;line-height:1.5}
+.doc-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 18px;padding:12px 14px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;margin-bottom:18px}
+.doc-meta div{display:flex;flex-direction:column;gap:1px;min-width:0}
+.doc-meta span{font-family:var(--font-display);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.doc-meta b{font-weight:600;font-size:12.5px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.doc-body p{margin:0 0 9px;color:var(--ink-2)}
+.doc-body p b{color:var(--ink)}
+.doc-lead{font-size:13px;color:var(--ink);padding:10px 14px;border-left:3px solid var(--sand);background:var(--sand-tint);border-radius:0 8px 8px 0}
+.doc-sec{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+.doc-sec:last-child{border-bottom:0}
+.doc-sec-n{font-family:var(--font-display);font-size:18px;font-weight:300;color:var(--sand);line-height:1;padding-top:2px;min-width:26px}
+.doc-sec h4{font-family:var(--font-display);font-weight:500;font-size:13px;color:var(--petrol);margin:0 0 3px;letter-spacing:.01em}
+.doc-sec p{margin:0;color:var(--ink-2)}
+.doc-declare{margin-top:14px;padding:12px 16px;border:1px solid var(--petrol-tint-2);background:var(--petrol-tint);border-radius:8px}
+.doc-declare b{display:block;font-family:var(--font-display);font-weight:500;color:var(--petrol);margin-bottom:3px;font-size:13px}
+.doc-declare p{margin:0;color:var(--ink)}
+.doc-sigs{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+.doc-sigs.two{grid-template-columns:1fr 1fr}
+.doc-sig{display:flex;flex-direction:column;gap:2px}
+.doc-sig-box{height:64px;display:flex;align-items:flex-end;border-bottom:1px solid var(--ink-2);margin-bottom:6px;padding-bottom:2px}
+.doc-sig-box img{height:56px;max-width:190px;object-fit:contain}
+.doc-sig-box .sig-svg{height:52px;width:190px}
+.doc-unsigned{font-family:var(--font-display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--warn);padding-bottom:18px}
+.doc-sig b{font-weight:600;font-size:12.5px;color:var(--ink)}
+.doc-sig span{font-size:11px;color:var(--ink-2)}
+.doc-sig small{font-family:var(--font-display);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.doc-foot{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin-top:26px;padding-top:10px;border-top:1px solid var(--line);font-size:9.5px;color:var(--muted);line-height:1.5}
+.doc-foot>span:first-child{flex:1}
+.doc-verify{display:flex;align-items:center;gap:6px;font-family:var(--font-display);letter-spacing:.06em;white-space:nowrap;color:var(--ink-2)}
+.doc-verify .ico{width:18px;height:18px;color:var(--petrol)}
+.doc-parties{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:16px}
+.doc-parties div{font-size:12px;color:var(--ink-2);line-height:1.55}
+.doc-parties span{display:block;font-family:var(--font-display);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.doc-parties b{display:block;font-weight:600;color:var(--ink);font-size:13px}
+.doc-table{width:100%;border-collapse:collapse;font-size:12.5px;margin:4px 0 10px}
+.doc-table th{font-family:var(--font-display);font-weight:500;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--petrol);padding:8px 10px;text-align:left}
+.doc-table th:first-child{border-radius:6px 0 0 0}.doc-table th:last-child{border-radius:0 6px 0 0}
+.doc-table td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-2)}
+.doc-table td b{color:var(--ink);font-weight:600}
+.doc-table .r{text-align:right;white-space:nowrap}
+.doc-cue{font-size:11.5px;color:var(--ink-2)}
+.doc-cue.muted{color:var(--muted)}
+.doc-days{display:inline-flex;gap:3px}
+.doc-days i{width:13px;height:13px;border:1px solid var(--line-2);border-radius:3px;display:inline-block}
+.doc-totals{margin-left:auto;width:min(300px,100%);display:flex;flex-direction:column;gap:5px;padding-top:6px}
+.doc-totals div{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--ink-2)}
+.doc-totals .grand{border-top:1px solid var(--petrol);margin-top:4px;padding-top:8px;font-size:14px;color:var(--ink)}
+.doc-totals .grand b{font-family:var(--font-display);font-weight:500;font-size:18px;color:var(--petrol)}
+.doc-pay{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-top:16px;padding:12px 14px;background:var(--paper-2);border:1px solid var(--line);border-radius:8px;font-size:12px}
+.doc-pay>div>span{display:block;font-family:var(--font-display);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.doc-tbai{display:flex;gap:10px;align-items:center;text-align:right}
+.doc-tbai .ico{width:44px;height:44px;color:var(--petrol);order:2}
+.doc-tbai div{display:flex;flex-direction:column;font-size:10.5px;color:var(--ink-2);line-height:1.45}
+.doc-tbai b{color:var(--ink)}
+.modal.doc-modal{width:min(860px,100%)}
+.modal.doc-modal .doc-modal-b{padding:0 12px 12px}
+.sheet .doc-stage{margin:0 -16px;padding:10px 8px;border-radius:0}
+.sheet .doc-paper{padding:20px 16px 16px;font-size:12px}
+.sheet .doc-lh{flex-direction:column;gap:10px}
+.sheet .doc-type{text-align:left;max-width:none}
+.sheet .doc-meta{grid-template-columns:1fr 1fr;gap:8px 12px;padding:10px 12px}
+.sheet .doc-sigs.two{grid-template-columns:1fr}
+.sheet .doc-parties{grid-template-columns:1fr}
+.sheet .doc-pay{flex-direction:column;align-items:flex-start}
+.sheet .doc-tbai{text-align:left}
+.sheet .doc-foot{flex-wrap:wrap}
+@media print{
+  #printArea .doc-stage{background:none;padding:0;border-radius:0}
+  #printArea .doc-paper{box-shadow:none;border-radius:0;max-width:none;padding:0;font-size:10.5pt}
+  #printArea .doc-table th{background:#163f4a!important;color:#fff!important}
+  @page{size:A4;margin:16mm 16mm 14mm}
+}
+
 /* ===== PROPOSAMENA (hub) ===== */
 .hub-wrap{max-width:1100px;margin:0 auto;padding:0 24px 72px}
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:64px 0 44px}
@@ -1616,32 +1698,60 @@ function safeRender(label,fn,host){try{fn()}catch(err){console.error('[Oinarri] 
 
 /* ---------- inprimatzeko ariketa-gida ---------- */
 
-/* ---- Dokumentu-ikustailea: baimenak, txostenak, gidak eta fakturak benetan irekitzen dira ---- */
+/* ---- Dokumentu-ikustailea: baimenak, txostenak, gidak eta fakturak, benetako dokumentu-itxurarekin ---- */
+const CENTER_NAME='OINARRI';
+const CENTER_TAG=['Fisioterapia, osteopatia eta ariketa eskola','Fisioterapia, osteopatía y escuela de ejercicio'];
+const CENTER_ADDR='Guridi Musikaria 11, behea · 20008 Donostia';
+const CENTER_CONTACT='613 005 091 · info@oinarri.eus';
 const CENTER_LINE='OINARRI · Guridi Musikaria 11, Donostia · 613 005 091 · info@oinarri.eus';
 const DOC_LABELS={arrazoia:['Kontsulta-arrazoia','Motivo de consulta'],aurrekariak:['Aurrekariak','Antecedentes'],sintomak:['Sintomen deskribapena','Descripción de los síntomas'],probak:['Proba diagnostikoak','Pruebas diagnósticas'],balorazioa:['Balorazioa','Valoración'],diagnostikoa:['Diagnostiko fisioterapeutikoa','Diagnóstico fisioterapéutico'],tratamendua:['Tratamendua eta helburuak','Tratamiento y objetivos'],bilakaera:['Bilakaera','Evolución']};
 function strHash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return (h>>>0).toString(16).padStart(8,'0')}
-function fakeSig(name){let h=0;for(const ch of name)h=(h*31+ch.charCodeAt(0))>>>0;const r=()=>{h=(h*1103515245+12345)>>>0;return (h>>>8)%1000/1000};let d='M12 46';let x=12;for(let i=0;i<7;i++){const c1x=x+6+r()*10,c1y=10+r()*40,c2x=x+14+r()*8,c2y=20+r()*40,ex=x+22+r()*10,ey=30+r()*22;d+=` C${c1x.toFixed(1)} ${c1y.toFixed(1)} ${c2x.toFixed(1)} ${c2y.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;x=ex}return `<svg viewBox="0 0 220 64" width="150" height="44" aria-hidden="true"><path d="${d}" fill="none" stroke="#163f4a" stroke-width="2.2" stroke-linecap="round"/><path d="M${(x-40).toFixed(1)} 52 L${(x+8).toFixed(1)} 50" fill="none" stroke="#163f4a" stroke-width="1.4" opacity=".6"/></svg>`}
-function docHtml(pid,spec){const p=pat(pid);if(!p)return '';const li=S.lang==='es'?1:0;const L=a=>a[li]||a[0];const logo=`<span class="logo"><span>OIN</span><svg class="mark" viewBox="0 0 100 100"><use href="#stones"/></svg><span>RRI</span></span>`;
-  const head=(title,sub)=>`<div class="doc-head">${logo}<div class="doc-meta">${esc(title)}<br>${esc(sub)}</div></div>`;
-  const foot=(extra)=>`<div class="doc-foot">${esc(CENTER_LINE)}${extra?'<br>'+extra:''}</div>`;
-  const proName=id=>{const pr=pro(id||p.pro);const inf=(S.proInfo||{})[pr.id]||{};return esc(pr.full)+(inf.coleg?' · '+L(['Kolegiatu zk.','Nº col.'])+' '+esc(inf.coleg):'')};
+function verifyCode(s){const h=strHash(s).toUpperCase();return h.slice(0,4)+'-'+h.slice(4,8)}
+function fakeSig(name){let h=0;for(const ch of name)h=(h*31+ch.charCodeAt(0))>>>0;const r=()=>{h=(h*1103515245+12345)>>>0;return (h>>>8)%1000/1000};let d='M10 40';let x=10;for(let i=0;i<7;i++){const c1x=x+6+r()*10,c1y=8+r()*36,c2x=x+14+r()*8,c2y=16+r()*36,ex=x+22+r()*10,ey=26+r()*20;d+=` C${c1x.toFixed(1)} ${c1y.toFixed(1)} ${c2x.toFixed(1)} ${c2y.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;x=ex}return `<svg viewBox="0 0 220 60" class="sig-svg" aria-hidden="true"><path d="${d}" fill="none" stroke="#1f3a44" stroke-width="2.1" stroke-linecap="round"/><path d="M${(x-46).toFixed(1)} 48 L${(x+6).toFixed(1)} 45" fill="none" stroke="#1f3a44" stroke-width="1.3" opacity=".55"/></svg>`}
+function docNum(prefix,seed){return `${prefix}-${TODAY.getFullYear()}-${(parseInt(strHash(seed).slice(0,4),16)%9000+1000)}`}
+function docShell(o){const li=o.li;const L=a=>a[li]||a[0];
+  const logo=`<span class="logo"><span>OIN</span><svg class="mark" viewBox="0 0 100 100"><use href="#stones"/></svg><span>RRI</span></span>`;
+  const sigs=(o.sigs||[]).map(s=>`<div class="doc-sig"><div class="doc-sig-box">${s.sig||''}</div><b>${esc(s.name)}</b>${s.sub?`<span>${esc(s.sub)}</span>`:''}<small>${esc(s.label)}</small></div>`).join('');
+  return `<div class="doc-stage"><article class="doc-paper">
+    <header class="doc-lh"><div class="doc-brand">${logo}<div class="doc-brand-sub">${esc(L(CENTER_TAG))}<br>${esc(CENTER_ADDR)}<br>${esc(CENTER_CONTACT)}</div></div><div class="doc-type"><span class="doc-eyebrow">${esc(o.kind)}</span><h2>${esc(o.title)}</h2><div class="doc-num">${esc(o.num)}<br>${esc(o.date)}</div></div></header>
+    ${o.meta&&o.meta.length?`<section class="doc-meta">${o.meta.map(([k,v])=>`<div><span>${esc(k)}</span><b>${esc(v||'—')}</b></div>`).join('')}</section>`:''}
+    <section class="doc-body">${o.body}</section>
+    ${sigs?`<section class="doc-sigs ${(o.sigs||[]).length>1?'two':''}">${sigs}</section>`:''}
+    <footer class="doc-foot"><span>${o.foot||''}</span><span class="doc-verify">${ico('qr','sm')}<span>${L(['Egiaztapen-kodea','Código de verificación'])} ${esc(o.code||'')}</span></span><span>1 / 1</span></footer>
+  </article></div>`}
+function docSection(n,title,text){return `<div class="doc-sec"><span class="doc-sec-n">${String(n).padStart(2,'0')}</span><div><h4>${esc(title)}</h4><p>${esc(text||'—')}</p></div></div>`}
+function docHtml(pid,spec){const p=pat(pid);if(!p)return '';const li=S.lang==='es'?1:0;const L=a=>a[li]||a[0];const rec=p.record||{};
+  const proInfo=id=>{const pr=pro(id||p.pro);const inf=(S.proInfo||{})[pr.id]||{};return {pr,coleg:inf.coleg||'',sub:tx(pr.role)+(inf.coleg?' · '+L(['Kolegiatu zk.','Nº col.'])+' '+inf.coleg:'')}};
   const proSig=id=>{const pr=pro(id||p.pro);const s=(S.proSig||{})[pr.id];return s?`<img src="${s}" alt="">`:fakeSig(pr.full)};
-  if(spec.kind==='consent'){const c=(p.consents||[])[spec.i];if(!c)return '';const txt=typeof consentTextFor==='function'?consentTextFor(c.n):'';const when=c.ok?esc(fmtLong(parseYmd(c.d||p.since)))+(c.time?' · '+esc(c.time):'')+(c.dev?' · '+esc(c.dev):''):'';
-    return `<div class="docview">${head(c.n,p.name+(p.nan?' · '+p.nan:''))}<div class="doc-body">${txt}</div><div class="sigblock">${c.ok?(c.sig?`<img src="${c.sig}" alt="">`:fakeSig(p.name)):''}<div><b>${c.ok?L(['Sinatuta','Firmado']):L(['Sinatu gabe','Sin firmar'])}</b><br><span class="small muted">${when}</span><br><span class="small muted">${L(['Sinatzailea','Firmante'])}: ${esc(p.name)}</span></div></div>${foot(c.ok?'SHA-256 '+strHash(c.n+p.name+(c.d||''))+'… · '+L(['Sinaduraren erregistroa aldaezina da','Registro de firma inalterable']):'')}</div>`}
-  if(spec.kind==='report'||(spec.kind==='doc'&&(p.docs||[])[spec.idx]&&(p.docs||[])[spec.idx].rid)){const rid=spec.kind==='report'?spec.rid:p.docs[spec.idx].rid;const r=(p.reports||[]).find(x=>x.id===rid);if(!r)return '';
-    return `<div class="docview">${head(r.title,p.name+' · '+fmtLong(parseYmd(r.d)))}${Object.keys(DOC_LABELS).filter(k=>r.s[k]).map(k=>`<h4>${L(DOC_LABELS[k])}</h4><p>${esc(r.s[k])}</p>`).join('')}<div class="sigblock">${proSig(r.by)}<div><b>${proName(r.by)}</b><br><span class="small muted">${esc(fmtLong(parseYmd(r.d)))}</span></div></div>${foot('')}</div>`}
-  if(spec.kind==='invoice'){const i=S.invoices.find(x=>x.id===spec.id);if(!i)return '';const lines=i.lines||[{c:i.concept,q:1,pr:i.amount}];const tot=lines.reduce((s,l)=>s+l.q*l.pr,0);
-    return `<div class="docview">${head((i.credit?L(['Faktura zuzentzailea','Factura rectificativa']):L(['Faktura','Factura']))+' '+i.id,fmtLong(parseYmd(i.date)))}<p class="small muted">${L(['Hartzailea','Cliente'])}: ${esc(p.name)}${p.nan?' · '+esc(p.nan):''}${i.ref?' · '+L(['Zuzentzen du','Rectifica'])+' '+esc(i.ref):''}</p><table><thead><tr><th>${L(['Kontzeptua','Concepto'])}</th><th style="text-align:right">${L(['Kop.','Cant.'])}</th><th style="text-align:right">${L(['Prezioa','Precio'])}</th><th style="text-align:right">${L(['Guztira','Total'])}</th></tr></thead><tbody>${lines.map(l=>`<tr><td>${esc(l.c)}</td><td class="num" style="text-align:right">${l.q}</td><td class="num" style="text-align:right">${l.pr} €</td><td class="num" style="text-align:right">${l.q*l.pr} €</td></tr>`).join('')}<tr><td colspan="3" style="text-align:right"><b>${L(['Guztira','Total'])}</b></td><td class="num" style="text-align:right"><b>${tot} €</b></td></tr></tbody></table><p class="small muted">${L(['Osasun-laguntzako zerbitzuak: BEZetik salbuetsita (37/1992 Legea, 20.Bat.3 art.).','Servicios sanitarios: exentos de IVA (Ley 37/1992, art. 20.Uno.3).'])} ${i.state==='paid'?L(['Ordainduta','Pagada'])+(i.method?' · '+esc(i.method):''):L(['Ordaintzeke','Pendiente'])}</p>${i.tbai?`<div class="row" style="gap:10px;align-items:center"><span class="qr" style="width:56px;height:56px">${ico('qr','lg')}</span><span class="small muted">TBAI-B00000000-${i.date.replace(/-/g,'').slice(2)}-${esc(i.id.replace('-',''))}-000</span></div>`:''}${foot('')}</div>`}
-  const d=(p.docs||[])[spec.idx];if(!d)return '';const name=tx(d.n);const n=name.toLowerCase();const rec=p.record||{};
-  if(n.includes('balorazio')||n.includes('valoraci')){return `<div class="docview">${head(name,p.name+' · '+fmtLong(parseYmd(d.d)))}<h4>${L(['Kontsulta-arrazoia','Motivo de consulta'])}</h4><p>${esc(tx(p.reason))}</p><h4>${L(['Anamnesia','Anamnesis'])}</h4><p>${esc(rec.anamnesia||'—')}</p><h4>${L(['Balorazioa','Valoración'])}</h4><p>${esc(rec.balorazioa||'—')}</p><h4>${L(['Helburuak','Objetivos'])}</h4><p>${esc(rec.helburuak||'—')}</p><h4>${L(['Tratamendu-plana','Plan de tratamiento'])}</h4><p>${esc(rec.plana||'—')}</p><div class="sigblock">${proSig()}<div><b>${proName()}</b><br><span class="small muted">${esc(fmtLong(parseYmd(d.d)))}</span></div></div>${foot('')}</div>`}
-  if(n.includes('gida')||n.includes('guía')||n.includes('ariketa')||n.includes('ejercicio')){const items=(p.program||[]).map(id=>exr(id)||(S.library||[]).find(x=>x.id===id)).filter(Boolean);const ps=p.programSets||{};
-    return `<div class="docview">${head(name,p.name+' · '+fmtLong(parseYmd(d.d)))}<p class="small muted">${L(['Astean 3 aldiz. Mina 4/10 baino handiagoa bada, gelditu eta esan.','3 veces por semana. Si el dolor supera 4/10, para y avísanos.'])}</p><table><thead><tr><th>#</th><th>${L(['Ariketa','Ejercicio'])}</th><th>${L(['Serieak × errep.','Series × rep.'])}</th></tr></thead><tbody>${items.map((x,k)=>`<tr><td class="num">${k+1}</td><td>${esc(tx(x.n||x.name||['','']))}<br><span class="small muted">${esc(String(tx(x.d||x.desc||['',''])||'').slice(0,90))}</span></td><td class="num">${(ps[x.id]&&ps[x.id].sets)||x.sets||3} × ${(ps[x.id]&&ps[x.id].reps)||x.reps||12}</td></tr>`).join('')||`<tr><td colspan="3">${L(['Programarik ez oraindik','Sin programa todavía'])}</td></tr>`}</tbody></table><div class="sigblock">${proSig()}<div><b>${proName()}</b></div></div>${foot('')}</div>`}
-  if(n.includes('alta')){return `<div class="docview">${head(name,p.name+' · '+fmtLong(parseYmd(d.d)))}<p>${L(['Tratamendua amaitu da helburuak lortuta. Etxeko programarekin jarraitzea gomendatzen da 4 astez, eta mina berriro agertuz gero kontsultatzea.','Tratamiento finalizado con los objetivos alcanzados. Se recomienda continuar el programa domiciliario 4 semanas y consultar si reaparece el dolor.'])}</p><div class="sigblock">${proSig()}<div><b>${proName()}</b></div></div>${foot('')}</div>`}
-  return `<div class="docview">${head(name,p.name+' · '+fmtLong(parseYmd(d.d)))}<p>${L(['Dokumentu hau pazientearen fitxan gordeta dago eta app-ean ikus daiteke.','Este documento está guardado en la ficha del paciente y visible en la app.'])}</p><div class="sigblock">${proSig()}<div><b>${proName()}</b></div></div>${foot('')}</div>`}
+  const pmeta=(date,proId)=>{const pi=proInfo(proId);return [[L(['Pazientea','Paciente']),p.name],[L(['NAN / IFZ','DNI / NIF']),p.nan||'—'],[L(['Telefonoa','Teléfono']),p.phone||'—'],[L(['Profesionala','Profesional']),pi.pr.full],[L(['Kolegiatu zk.','Nº colegiado']),pi.coleg||'—'],[L(['Data','Fecha']),fmtLong(parseYmd(date))]]};
+  const legal=L(['Dokumentu hau digitalki sortu eta gorde da. Datuen arduraduna: OINARRI · Historia klinikoa gutxienez 5 urtez gordetzen da (41/2002 Legea).','Documento generado y custodiado digitalmente. Responsable: OINARRI · La historia clínica se conserva al menos 5 años (Ley 41/2002).']);
+  if(spec.kind==='consent'){const c=(p.consents||[])[spec.i];if(!c)return '';const raw=typeof consentTextFor==='function'?consentTextFor(c.n):'';const paras=raw.split('<br>').filter(x=>x.trim()).map(x=>`<p>${x}</p>`).join('');const when=c.ok?fmtLong(parseYmd(c.d||p.since))+(c.time?' · '+c.time:''):'';const pi=proInfo();
+    const body=`${paras}<div class="doc-declare"><b>${L(['Adierazpena','Declaración'])}</b><p>${L([`Nik, ${esc(p.name)}${p.nan?' ('+esc(p.nan)+')':''}, goian azaldutako informazioa irakurri eta ulertu dudala adierazten dut, nire galderei erantzun zaiela, eta baimena ematen dudala. Badakit baimena edozein unetan ken dezakedala.`,`Yo, ${esc(p.name)}${p.nan?' ('+esc(p.nan)+')':''}, declaro que he leído y comprendido la información anterior, que se han respondido mis preguntas y que doy mi consentimiento. Sé que puedo retirarlo en cualquier momento.`])}</p></div>`;
+    const sigs=[{label:L(['Pazientearen sinadura','Firma del paciente']),sig:c.ok?(c.sig?`<img src="${c.sig}" alt="">`:fakeSig(p.name)):`<span class="doc-unsigned">${L(['Sinatu gabe','Sin firmar'])}</span>`,name:p.name,sub:c.ok?when+(c.dev?' · '+c.dev:''):L(['Sinatzeko zain','Pendiente de firma'])},{label:L(['Zentroaren sinadura','Firma del centro']),sig:proSig(),name:pi.pr.full,sub:pi.sub}];
+    return docShell({li,kind:L(['Baimena · sinadura digitala','Consentimiento · firma digital']),title:c.n,num:docNum('BA',c.n+p.id),date:c.ok?fmtLong(parseYmd(c.d||p.since)):fmtLong(TODAY),meta:pmeta(c.d||p.since),body,sigs,foot:legal,code:verifyCode(c.n+p.name+(c.d||''))})}
+  if(spec.kind==='report'||(spec.kind==='doc'&&(p.docs||[])[spec.idx]&&(p.docs||[])[spec.idx].rid)){const rid=spec.kind==='report'?spec.rid:p.docs[spec.idx].rid;const r=(p.reports||[]).find(x=>x.id===rid);if(!r)return '';const pi=proInfo(r.by);let n=0;
+    const body=Object.keys(DOC_LABELS).filter(k=>r.s[k]).map(k=>docSection(++n,L(DOC_LABELS[k]),r.s[k])).join('');
+    return docShell({li,kind:L(['Txosten klinikoa','Informe clínico']),title:r.title,num:docNum('TX',r.id+p.id),date:fmtLong(parseYmd(r.d)),meta:pmeta(r.d,r.by),body,sigs:[{label:L(['Profesionalaren sinadura','Firma del profesional']),sig:proSig(r.by),name:pi.pr.full,sub:pi.sub}],foot:legal,code:verifyCode(r.id+p.id+r.d)})}
+  if(spec.kind==='invoice'){const i=S.invoices.find(x=>x.id===spec.id);if(!i)return '';const lines=i.lines||[{c:i.concept,q:1,pr:i.amount}];const tot=lines.reduce((s,l)=>s+l.q*l.pr,0);const due=ymd(addDays(parseYmd(i.date),15));
+    const body=`<div class="doc-parties"><div><span>${L(['Igorlea','Emisor'])}</span><b>${esc(CENTER_NAME)}</b>${esc(CENTER_ADDR)}<br>IFZ B00000000 · ${esc(CENTER_CONTACT)}</div><div><span>${L(['Hartzailea','Cliente'])}</span><b>${esc(p.name)}</b>${p.nan?esc(p.nan)+'<br>':''}${esc(p.address||'')}${p.email?'<br>'+esc(p.email):''}</div></div>
+      <table class="doc-table"><thead><tr><th>${L(['Kontzeptua','Concepto'])}</th><th class="r">${L(['Kop.','Cant.'])}</th><th class="r">${L(['Prezioa','Precio'])}</th><th class="r">${L(['Zenbatekoa','Importe'])}</th></tr></thead><tbody>${lines.map(l=>`<tr><td>${esc(l.c)}</td><td class="r num">${l.q}</td><td class="r num">${l.pr.toFixed(2)} €</td><td class="r num">${(l.q*l.pr).toFixed(2)} €</td></tr>`).join('')}</tbody></table>
+      <div class="doc-totals"><div><span>${L(['Oinarria','Base imponible'])}</span><b class="num">${tot.toFixed(2)} €</b></div><div><span>${L(['BEZ · salbuetsia (20.Bat.3 art.)','IVA · exento (art. 20.Uno.3)'])}</span><b class="num">0,00 €</b></div><div class="grand"><span>${L(['Guztira','Total'])}</span><b class="num">${tot.toFixed(2)} €</b></div></div>
+      <div class="doc-pay"><div><span>${L(['Egoera','Estado'])}</span><b>${i.state==='paid'?L(['Ordainduta','Pagada'])+(i.method?' · '+esc(i.method):''):L(['Ordaintzeke · epemuga','Pendiente · vencimiento'])+(i.state!=='paid'?' '+esc(fmtDM(parseYmd(due))):'')}</b></div>${i.tbai?`<div class="doc-tbai">${ico('qr','lg')}<div><b>TicketBAI</b><span>TBAI-B00000000-${i.date.replace(/-/g,'').slice(2)}-${esc(i.id.replace('-',''))}-000</span><span>${L(['Egiaztatu: Gipuzkoako Foru Ogasuna','Verificar: Hacienda Foral de Gipuzkoa'])}</span></div></div>`:''}</div>`;
+    return docShell({li,kind:i.credit?L(['Faktura zuzentzailea','Factura rectificativa']):L(['Faktura','Factura']),title:`${L(['Faktura','Factura'])} ${i.id}`,num:i.ref?L(['Zuzentzen du','Rectifica'])+' '+i.ref:L(['Faktura-zenbakia','Nº de factura'])+' '+i.id,date:fmtLong(parseYmd(i.date)),meta:null,body,sigs:null,foot:L(['Osasun-laguntzako zerbitzuak: BEZetik salbuetsita (37/1992 Legea, 20.Bat.3 art.). Faktura hau TicketBAI sistemaren bidez igorri da.','Servicios sanitarios exentos de IVA (Ley 37/1992, art. 20.Uno.3). Factura emitida mediante el sistema TicketBAI.']),code:verifyCode(i.id+p.id)})}
+  const d=(p.docs||[])[spec.idx];if(!d)return '';const name=tx(d.n);const n=name.toLowerCase();const pi=proInfo();
+  const proSigs=[{label:L(['Profesionalaren sinadura','Firma del profesional']),sig:proSig(),name:pi.pr.full,sub:pi.sub}];
+  if(n.includes('balorazio')||n.includes('valoraci')){const body=[docSection(1,L(['Kontsulta-arrazoia','Motivo de consulta']),tx(p.reason)),docSection(2,L(['Anamnesia','Anamnesis']),rec.anamnesia),docSection(3,L(['Balorazioa','Valoración']),rec.balorazioa),docSection(4,L(['Helburuak','Objetivos']),rec.helburuak),docSection(5,L(['Tratamendu-plana','Plan de tratamiento']),rec.plana)].join('');
+    return docShell({li,kind:L(['Txosten klinikoa','Informe clínico']),title:name,num:docNum('TX',name+p.id),date:fmtLong(parseYmd(d.d)),meta:pmeta(d.d),body,sigs:proSigs,foot:legal,code:verifyCode(name+p.id+d.d)})}
+  if(n.includes('gida')||n.includes('guía')||n.includes('ariketa')||n.includes('ejercicio')){const items=(p.program||[]).map(id=>exr(id)||(S.library||[]).find(x=>x.id===id)).filter(Boolean);const ps=p.programSets||{};const days=DAYS_S[li?'es':'eu'];
+    const body=`<p class="doc-lead">${L(['Astean 3 aldiz, gutxienez egun bat tartean utzita. Mina 4/10 baino handiagoa bada, gelditu eta esan iezaguzu app-etik.','3 veces por semana, dejando al menos un día entre sesiones. Si el dolor supera 4/10, para y avísanos desde la app.'])}</p><table class="doc-table"><thead><tr><th>#</th><th>${L(['Ariketa','Ejercicio'])}</th><th class="r">${L(['Serieak × errep.','Series × rep.'])}</th><th>${L(['Astea','Semana'])}</th></tr></thead><tbody>${items.map((x,k)=>{const s=ps[x.id]||{};return `<tr><td class="num">${String(k+1).padStart(2,'0')}</td><td><b>${esc(tx(x.n))}</b><br><span class="doc-cue">${esc(tx(x.cue||['','']))}</span>${x.equip?`<br><span class="doc-cue muted">${esc(tx(x.equip))}</span>`:''}</td><td class="r num">${s.sets||x.sets||3} × ${s.reps||x.reps||12}</td><td><span class="doc-days">${[1,2,3,4,5,6,0].map(dd=>`<i title="${days[dd]}"></i>`).join('')}</span></td></tr>`}).join('')||`<tr><td colspan="4">${L(['Programarik ez oraindik','Sin programa todavía'])}</td></tr>`}</tbody></table>`;
+    return docShell({li,kind:L(['Ariketa-programa','Programa de ejercicios']),title:name,num:docNum('AG',name+p.id),date:fmtLong(parseYmd(d.d)),meta:pmeta(d.d),body,sigs:proSigs,foot:L(['Bideoak eta jarraibide osoak pazientearen app-ean. Zalantzarik izanez gero, idatzi mezuetatik.','Vídeos e instrucciones completas en la app del paciente. Ante cualquier duda, escríbenos desde mensajes.']),code:verifyCode(name+p.id+d.d)})}
+  if(n.includes('alta')){const body=docSection(1,L(['Laburpena','Resumen']),L(['Tratamendua amaitu da ezarritako helburuak lortuta. Mina 1/10 azpian eta funtzio osoa eguneroko jardueretan.','Tratamiento finalizado con los objetivos alcanzados. Dolor por debajo de 1/10 y función completa en las actividades diarias.']))+docSection(2,L(['Gomendioak','Recomendaciones']),L(['Etxeko programarekin jarraitu 4 astez, astean 3 aldiz. Karga progresiboki handitu.','Continuar el programa domiciliario 4 semanas, 3 veces por semana. Aumentar la carga de forma progresiva.']))+docSection(3,L(['Noiz kontsultatu','Cuándo consultar']),L(['Mina berriro agertuz gero edo mugikortasuna gutxituz gero, eskatu hitzordua app-etik.','Si reaparece el dolor o disminuye la movilidad, pide cita desde la app.']));
+    return docShell({li,kind:L(['Alta-txostena','Informe de alta']),title:name,num:docNum('AL',name+p.id),date:fmtLong(parseYmd(d.d)),meta:pmeta(d.d),body,sigs:proSigs,foot:legal,code:verifyCode(name+p.id+d.d)})}
+  return docShell({li,kind:L(['Dokumentua','Documento']),title:name,num:docNum('DK',name+p.id),date:fmtLong(parseYmd(d.d)),meta:pmeta(d.d),body:docSection(1,L(['Edukia','Contenido']),L(['Dokumentu hau pazientearen fitxan gordeta dago eta app-ean ikus daiteke.','Este documento está guardado en la ficha del paciente y visible en la app.'])),sigs:proSigs,foot:legal,code:verifyCode(name+p.id+d.d)})}
 let LAST_DOC='';
 function openDocViewer(pid,spec,ctx){const html=docHtml(pid,spec);if(!html){toast('Dokumentua ez da aurkitu','file');return}LAST_DOC=html;const li=S.lang==='es'?1:0;
   if(ctx==='patient'&&typeof PA!=='undefined'){PA.openSheet(PA.sheetHead(['Dokumentua','Documento'][li])+html+`<div class="row" style="gap:8px;margin-top:12px"><button class="btn btn-outline grow" data-act="docprint">${ico('file')}PDF</button><button class="btn btn-primary grow" data-act="sheetclose">${['Itxi','Cerrar'][li]}</button></div>`);return}
-  openModal(`<div class="modal-h"><h3>Dokumentua</h3><button class="btn btn-icon btn-ghost" data-mclose="1">${ico('x')}</button></div><div class="modal-b">${html}</div><div class="modal-f"><button class="btn btn-ghost" data-mclose="1">Itxi</button><button class="btn btn-outline" data-docprint="1">${ico('file')}PDF</button></div>`)}
+  const bg=openModal(`<div class="modal-h"><h3>Dokumentua</h3><button class="btn btn-icon btn-ghost" data-mclose="1">${ico('x')}</button></div><div class="modal-b doc-modal-b">${html}</div><div class="modal-f"><button class="btn btn-ghost" data-mclose="1">Itxi</button><button class="btn btn-petrol" data-docprint="1">${ico('file')}PDF gorde / inprimatu</button></div>`);if(bg){const m=bg.querySelector('.modal');if(m)m.classList.add('doc-modal')}}
 function printDoc(){if(!LAST_DOC)return;let area=$('#printArea');if(!area){area=document.createElement('div');area.id='printArea';document.body.appendChild(area)}area.innerHTML=LAST_DOC;setTimeout(()=>window.print(),80)}
 function printProgram(pid){const p=pat(pid);if(!p)return;const items=p.program.map(id=>exr(id)||S.library.find(x=>x.id===id)).filter(Boolean);const li=S.lang==='es'?1:0;
   let area=$('#printArea');if(!area){area=document.createElement('div');area.id='printArea';document.body.appendChild(area)}
